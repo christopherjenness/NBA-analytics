@@ -22,7 +22,7 @@ James-stein estimation is given by:
 
 ![Imgur](http://i.imgur.com/OTJUY8b.png)
 
-where **y** is a vector of player's current 3PT% and the number of players m.
+where **y** is a vector of player's current 3PT% and the number of players m.  Notice how **y** is shrunk towards the origin.
 
 ![Imgur](http://i.imgur.com/F4PeD2n.png)
 
