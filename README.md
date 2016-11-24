@@ -18,6 +18,12 @@ In PER/PER.py we calculate the James-Stein estimated 3PT% for each player in the
 
 Efron, Bradley, and Carl N. Morris. Stein's paradox in statistics. WH Freeman, 1977.
 
+James-stein estimation is given by:
+
+![Imgur](http://i.imgur.com/OTJUY8b.png)
+
+where **y** is a vector of player's current 3PT% and the number of players m.
+
 ![Imgur](http://i.imgur.com/F4PeD2n.png)
 
 Here we have plotted the players emperical 3PT% (blue) and James-Stein 3PT% estimation (green).  As you can see, the extremes are dialed in towards the league average.
