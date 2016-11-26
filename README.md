@@ -34,4 +34,55 @@ Here are some interesting estimates of 3PT%:
 
 ![Imgur](http://i.imgur.com/tRxDD2Z.png)
 
-## Player Efficiency Rating (PER)
+## Player Efficiency Rating (PER) (November 2016)
+Player efficiency rating (PER) is a linear combination of box score statistics which is commonly as a single number to describe how valuable a player is.  Here, we look at a number of properties of PER (from the 2015-16 season).
+
+PER is normalized so that the league average for a given season is 15.  But what is the actual distribution of PER?
+
+![Imgur](http://i.imgur.com/Ccqut1L.png)
+
+What we see is that the distribution of PER isn't actually centered around 15.  The fact that the mean is 15 is due to players with extremely high PERs bring up the average.  Instead, **the bulk of players are centered around 12-14**.  In fact, the distribution is quite tight, with a **standard deviation of ~4**. 
+
+With PER, we can see when players peak during their career:
+
+![Imgur](http://i.imgur.com/IulH5aQ.png)
+
+For the high-end talent, players peak in their late 20's and begin a fairly linear decline.
+
+One common critism of PER is that Offense is heavily favored.  When we break down by position, we see that Point Gaurds and Centers are favorite.  This is due to PER weighting things like assists and rebounds heavily, which are biased towards those positions.
+
+![Imgur](http://i.imgur.com/lHkbRIR.png)
+
+Lastly, one might expect to use players with higher PERs more than players with low PERs (not a very complicated hypothesis).  Indeed, this seems to be true, with a linear correlation between usage and PER.
+
+![Imgur](http://i.imgur.com/OpKxWbA.png)
+
+What is interesting though, is which players are underused or overused according to their PER.
+
+**DeMarcus Cousins**, while being a great player, was far over-used according to his PER.  This is likely due to him being on a disfunctional team.  **Kobe** was obviously the most used player in the NBA (by this metric, but also by the eye test).  Everything was running though him and he was not very good.
+
+![Imgur](http://i.imgur.com/UMAv14o.png)
+
+![Imgur](http://i.imgur.com/SX34bym.png)
+
+Alternatively, **Boban** and **Whiteside** were underused. I attibute this to their inexperience and coaches not yet trusting them enough to run plays for.
+
+![Imgur](http://i.imgur.com/m5hFeGA.png)
+
+![Imgur](http://i.imgur.com/PlFPelQ.png)
+
+Interestingly, The warriors perfectly used Steph Curry.  This seems like a difficult task given how many talents they are working with.
+
+![Imgur](http://i.imgur.com/ZPeV2JU.png)
+
+If anyone is interested, here are the top and bottom PERs from last season:
+
+![Imgur](http://i.imgur.com/iNFFUdT.png)
+
+![Imgur](http://i.imgur.com/9mCSVad.png)
+
+and all time:
+
+![Imgur](http://i.imgur.com/TDGj2ef.png)
+
+
