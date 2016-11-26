@@ -28,6 +28,10 @@ where **y** is a vector of player's current 3PT% and the number of players m.  N
 
 Here we have plotted the players emperical 3PT% (blue) and James-Stein 3PT% estimation (green).  As you can see, the extremes are dialed in towards the league average.
 
-It also helps to look at individual cases.  J.J. Reddick is a great 3PT shooter.  So far he is shooting 49%, making 34/69 shots.  Since he has taken a healthy amount of shots, James-Stein estimation only dials him back to 43%.  On the other hand, Serge Ibaka is also making nearly 49%, but only on 38 attempts.  James-Stein dials his 3PT% estimation all the way down to 37%.
+It also helps to look at individual cases.  J.J. Redick is a great 3PT shooter.  So far he is shooting 49%, making 34/69 shots.  Since he has taken a healthy amount of shots, James-Stein estimation only dials him back to 43%.  On the other hand, Serge Ibaka is also making nearly 49%, but only on 38 attempts.  James-Stein dials his 3PT% estimation all the way down to 37%.
+
+Here are some interesting estimates of 3PT%:
+
+![Imgur](http://i.imgur.com/tRxDD2Z.png)
 
 ## Player Efficiency Rating (PER)
