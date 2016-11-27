@@ -4,6 +4,7 @@ Short, offhand analyses of the NBA
 ## Topics Covered 
 * James-Stein estimation of NBA statistics
 * Player Efficiency Rating (PER)
+* Referee Analysis
 
 ## James-Stein estimation of NBA statistics (November 2016)
 There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
@@ -84,5 +85,35 @@ If anyone is interested, here are the top and bottom PERs from last season:
 and all time:
 
 ![Imgur](http://i.imgur.com/TDGj2ef.png)
+
+## Referee Analysis (November 2016)
+
+Free throws are the most boring part of basketball.  The flow of a nearly perfect game is brought to a halt for 2 minutes.  I strongly feel refs should "let them play".  If the NBA won't change the rules, then the refs can utilize judicial action and just stop calling fouls.
+
+What is particularly agregious though, are refs who call too many fouls.  Here we analyze how many fouls were awarded by referees during the 2015-16 NBA season. Note: All data is normalized "per game".
+
+![Imgur](http://i.imgur.com/XEPcDQE.png)
+
+When we look at the total free throws awarded for home and away teams, we see that 3 referees cluster away from the rest of the refs.  They slow down the game dramatically by awarding more FTA per game.  Refs are commonly accused of causing home-team advantage.  On the bright side, these 3 whistle-blowers don't seem to contribute to home-team advantage.
+
+Who are these refs?
+
+* **Ken Maur**
+* **Josh Tiven**
+* **Zach Zarba**
+
+When we combine all FTA awarded per game (home and away), it is immediately clear that these three refs are not like the rest of the reffing team in the NBA.
+
+![Imgur](http://i.imgur.com/Fm0nCy8.png)
+
+What about personal fouls?  Are there refs that like to call a ton of personal fouls?  This isn't as agregious since non-shooting fouls hardly slow down the game.  However, calling a lot of personal fouls should be frowned upon, as it often seen as refs trying to control the game too much.
+
+In fact, a single ref calls much more personal fouls then the other refs.  Who is it? **Zach Zarba**
+
+![Imgur](http://i.imgur.com/lwCNmWR.png)
+
+So what about the other two refs that like to call a lot of shooting fouls ( and )?  When we break down each ref by how many personal fouls they call and how many shooting fouls they call, we see a linear correlation.  This makes sense: refs have a certain amount of 'trigger-happiness' and they don't discriminate by which type of fouls they are calling.  **Ken Maur** and **Josh Tiven**, on the other hand, like to call a high proportion of shooting fouls relative to personal fouls.  What does that mean?  I have no idea, but it needs to stop.
+
+![Imgur](http://i.imgur.com/QogogTU.png)
 
 
