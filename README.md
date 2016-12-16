@@ -37,7 +37,7 @@ Here are some interesting estimates of 3PT%:
 ![Imgur](http://i.imgur.com/tRxDD2Z.png)
 
 ## Player Efficiency Rating (PER) (November 2016)
-Player efficiency rating (PER) is a linear combination of box score statistics which is commonly as a single number to describe how valuable a player is.  Here, we look at a number of properties of PER (from the 2015-16 season).
+Player efficiency rating (PER) is a linear combination of box score statistics which is commonly used as a single number to describe how valuable a player is.  Here, we look at a number of properties of PER (from the 2015-16 season).
 
 PER is normalized so that the league average for a given season is 15.  But what is the actual distribution of PER?
 
