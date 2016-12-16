@@ -5,6 +5,7 @@ Short, offhand analyses of the NBA
 * James-Stein estimation of NBA statistics
 * Player Efficiency Rating (PER)
 * Referee Analysis
+* Tanking
 
 ## James-Stein estimation of NBA statistics (November 2016)
 There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
@@ -116,4 +117,16 @@ So what about the other two refs that like to call a lot of shooting fouls ( and
 
 ![Imgur](http://i.imgur.com/QogogTU.png)
 
+## Tanking (December 2016)
+If an NBA team "tanks" and gets a poor record, they are more likely to get the first pick in the following draft.  But how does the first pick change the course of a franchise?  Here we analyze the ten year trajectory of all teams since 1990 that obtained the first draft pick.
+
+How does a team's win percentage change after getting the top pick?  Teams peak 4 years after getting the first pick, and their regular season win percentage goes up by 30% on average.  That is 25 extra regular season wins!
+
+![Imgur](http://i.imgur.com/5yqKvTY.png)
+
+What about making the playoffs?  Again, teams peak four years after tanking.  The results are striking though.  Nearly 70% of teams made the playoffs 4 years after tanking.  The percentage of tanking teams making the playoffs stays above 50% for years 4-9 after tanking.  
+
+![Imgur](http://i.imgur.com/edmxwTd.png)
+
+I think tanking is a really good idea.
 
