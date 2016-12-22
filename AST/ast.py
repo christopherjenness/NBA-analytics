@@ -12,6 +12,10 @@ def set_plot_params(size):
     plt.rc('legend', fontsize=SIZE) 
 
 def threePTs(df):
+    """
+    This function takes an assist data frame and calculates how many
+    3PT and 2PT assists each player has.
+    """
     AST = df['AST']
     ASTPT = df['AST PTS'] 
     counter = 0
