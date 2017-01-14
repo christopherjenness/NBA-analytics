@@ -4,6 +4,7 @@ Short, offhand analyses of the NBA
 ## Topics Covered 
 * Underrated Assisters
 * Tanking
+* Emperical Bayes estimation of NBA statistics
 * James-Stein estimation of NBA statistics
 * Player Efficiency Rating (PER)
 * Referee Analysis
@@ -40,6 +41,38 @@ What about making the playoffs?  Again, teams peak four years after tanking.  Th
 ![Imgur](http://i.imgur.com/edmxwTd.png)
 
 I think tanking is a really good idea.
+
+## Emperical Bayes estimation of NBA statistics (January 2017)
+There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
+
+Previously, we looked at James-Stein estimation of NBA statistics to solve this problem (see below).  Here, we use a method called Emperial Bayes.
+
+So far into the season, how are players distributed when it comes to 3PT%?  
+
+![Dist](http://i.imgur.com/iyZPaTX.png)
+
+In Emperican Bayes, we fit a beta distribution to the emperical distribution and use this as our prior prediction for players probability.  What this means is that our starting point for estimating a players 3PT% is to just ask "Well, how do most players in the NBA shoot 3PT shots?"
+
+![Beta](http://i.imgur.com/tUuklaL.png)
+
+Using this as our starting point, we use each player's 3 point attempts and 3 point made shots as evidence to update our prior belief.  This means if a player has made a ton of 3PT shots, we update our estimate of their 3PT% to reflect that.  
+
+In essence, Emperical Bayes accounts for small sample sizes by dialing each players 3PT% towards the league average.  Just like James-Stein estimation, the less shots they've taken, the closer to league average they are estimated.  If you've made 9 out of 10 shots from 3PT, that will likely not keep up for the rest of the season and your Emperical Bayes 3PT% estimate will reflect that.
+
+![Estimate](http://i.imgur.com/D0hk9iJ.png)
+
+As you can see, most players are dialed toward the league average.
+
+Here are some interesting results for players's Emperical Bayes 3PT% estimate:
+
+* Even though **James Jones** has the highest 3PT% (43%), he has only taken 28 3's, so his emperical bayes estimate is only 51%.
+* **George Hill** has the highest 3PT% Estimate (44%)
+* The other players in the top 5 are **Kyle Lowry, Danny Green, and JJ Redick**
+
+Emperical Bayes can do more than estimate your 3PT%.  It can also provide credible intervals (similar to confidence intervals).  For example, George Hill's 3PT% estimate is 43%, but his 95% credible interval spans from 36%-52%.  As the season goes on and he takes more 3s, the credible interval will get tighter and tighter.
+
+![Hill](http://i.imgur.com/QwzoRvH.png)
+
 
 ## James-Stein estimation of NBA statistics (November 2016)
 There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
