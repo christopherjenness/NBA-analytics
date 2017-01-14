@@ -2,11 +2,44 @@
 Short, offhand analyses of the NBA
 
 ## Topics Covered 
-* James-Stein estimation of NBA statistics
 * Underrated Assisters
+* Tanking
+* James-Stein estimation of NBA statistics
 * Player Efficiency Rating (PER)
 * Referee Analysis
-* Tanking
+
+## Underrated Assisters (December 2016)
+
+I wanted to look into underrated assisters in the NBA.  Players who are really good at creating plays by passing, but don't necessarily rake up traditional "Assists" in their box score.  I thought I would find players who are thought to be bad/average, but are actually elite.  What I ended up finding is that a few elite players are even more elite than we think.
+
+First, are there players who don't get a ton of traditional assists, but get a lots of "Secondary Assists".  The guy who passes it to the assister.  The hockey assist.  The answer is **Steph Curry**.  Below, I'm plotting the total primary and secondary assists of every player in the NBA this season.
+
+![Imgur](http://i.imgur.com/bTyXA34.png)
+
+In fact, the **Warriors** are a standout team when it comes to total hockey assists. It's not even close.
+
+![Imgur](http://i.imgur.com/iwv27o1.png)
+
+Another thing I wanted to look at was if there are players whos assists are more valuable than other players.  If a player assists a lot of 3PT shots, that is more valuable than a lot of 2PT assists.  Again, it turnss out that two all-stars, **LeBron James** and **James Harden** are at the top of this list.  My favorite anomaly in this category is **Harrison Barnes** who has 34 3PT Assists and 3 2PT Assists.  He exclusively assists to 3PT shooters.  
+
+![Imgur](http://i.imgur.com/9H7o0Zg.png)
+
+Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
+
+![Imgur](http://i.imgur.com/GscIYAi.png)
+
+## Tanking (December 2016)
+If an NBA team "tanks" and gets a poor record, they are more likely to get the first pick in the following draft.  But how does the first pick change the course of a franchise?  Here we analyze the ten year trajectory of all teams since 1990 that obtained the first draft pick.
+
+How does a team's win percentage change after getting the top pick?  Teams peak 4 years after getting the first pick, and their regular season win percentage goes up by 30% on average.  That is 25 extra regular season wins!
+
+![Imgur](http://i.imgur.com/5yqKvTY.png)
+
+What about making the playoffs?  Again, teams peak four years after tanking.  The results are striking though.  Nearly 70% of teams made the playoffs 4 years after tanking.  The percentage of tanking teams making the playoffs stays above 50% for years 4-9 after tanking.  
+
+![Imgur](http://i.imgur.com/edmxwTd.png)
+
+I think tanking is a really good idea.
 
 ## James-Stein estimation of NBA statistics (November 2016)
 There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
@@ -37,25 +70,6 @@ Here are some interesting estimates of 3PT%:
 
 ![Imgur](http://i.imgur.com/tRxDD2Z.png)
 
-## Underrated Assisters (December 2016)
-
-I wanted to look into underrated assisters in the NBA.  Players who are really good at creating plays by passing, but don't necessarily rake up traditional "Assists" in their box score.  I thought I would find players who are thought to be bad/average, but are actually elite.  What I ended up finding is that a few elite players are even more elite than we think.
-
-First, are there players who don't get a ton of traditional assists, but get a lots of "Secondary Assists".  The guy who passes it to the assister.  The hockey assist.  The answer is **Steph Curry**.  Below, I'm plotting the total primary and secondary assists of every player in the NBA this season.
-
-![Imgur](http://i.imgur.com/bTyXA34.png)
-
-In fact, the **Warriors** are a standout team when it comes to total hockey assists. It's not even close.
-
-![Imgur](http://i.imgur.com/iwv27o1.png)
-
-Another thing I wanted to look at was if there are players whos assists are more valuable than other players.  If a player assists a lot of 3PT shots, that is more valuable than a lot of 2PT assists.  Again, it turnss out that two all-stars, **LeBron James** and **James Harden** are at the top of this list.  My favorite anomaly in this category is **Harrison Barnes** who has 34 3PT Assists and 3 2PT Assists.  He exclusively assists to 3PT shooters.  
-
-![Imgur](http://i.imgur.com/9H7o0Zg.png)
-
-Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
-
-![Imgur](http://i.imgur.com/GscIYAi.png)
 
 ## Player Efficiency Rating (PER) (November 2016)
 Player efficiency rating (PER) is a linear combination of box score statistics which is commonly used as a single number to describe how valuable a player is.  Here, we look at a number of properties of PER (from the 2015-16 season).
@@ -110,9 +124,7 @@ and all time:
 
 ## Referee Analysis (November 2016)
 
-Free throws are the most boring part of basketball.  The flow of a nearly perfect game is brought to a halt for 2 minutes.  I strongly feel refs should "let them play".  If the NBA won't change the rules, then the refs can utilize judicial action and just stop calling fouls.
-
-What is particularly agregious though, are refs who call too many fouls.  Here we analyze how many fouls were awarded by referees during the 2015-16 NBA season. Note: All data is normalized "per game".
+Refereeing in the NBAis an extremely hard job.  While all of the referees are professionals, they have different inclinations to blow there whistle. Here we analyze how many fouls were awarded by referees during the 2015-16 NBA season. Note: All data is normalized "per game".
 
 ![Imgur](http://i.imgur.com/XEPcDQE.png)
 
@@ -128,26 +140,13 @@ When we combine all FTA awarded per game (home and away), it is immediately clea
 
 ![Imgur](http://i.imgur.com/Fm0nCy8.png)
 
-What about personal fouls?  Are there refs that like to call a ton of personal fouls?  This isn't as agregious since non-shooting fouls hardly slow down the game.  However, calling a lot of personal fouls should be frowned upon, as it often seen as refs trying to control the game too much.
+What about personal fouls?  Are there refs that like to call a ton of personal fouls?
 
 In fact, a single ref calls much more personal fouls then the other refs.  Who is it? **Zach Zarba**
 
 ![Imgur](http://i.imgur.com/lwCNmWR.png)
 
-So what about the other two refs that like to call a lot of shooting fouls ( and )?  When we break down each ref by how many personal fouls they call and how many shooting fouls they call, we see a linear correlation.  This makes sense: refs have a certain amount of 'trigger-happiness' and they don't discriminate by which type of fouls they are calling.  **Ken Maur** and **Josh Tiven**, on the other hand, like to call a high proportion of shooting fouls relative to personal fouls.  What does that mean?  I have no idea, but it needs to stop.
+So what about the other two refs that like to call a lot of shooting fouls?  When we break down each ref by how many personal fouls they call and how many shooting fouls they call, we see a linear correlation.  This makes sense: refs have a certain amount of 'trigger-happiness' and they don't discriminate by which type of fouls they are calling.  **Ken Maur** and **Josh Tiven**, on the other hand, like to call a high proportion of shooting fouls relative to personal fouls.  What does that mean?  I have no idea.
 
 ![Imgur](http://i.imgur.com/QogogTU.png)
-
-## Tanking (December 2016)
-If an NBA team "tanks" and gets a poor record, they are more likely to get the first pick in the following draft.  But how does the first pick change the course of a franchise?  Here we analyze the ten year trajectory of all teams since 1990 that obtained the first draft pick.
-
-How does a team's win percentage change after getting the top pick?  Teams peak 4 years after getting the first pick, and their regular season win percentage goes up by 30% on average.  That is 25 extra regular season wins!
-
-![Imgur](http://i.imgur.com/5yqKvTY.png)
-
-What about making the playoffs?  Again, teams peak four years after tanking.  The results are striking though.  Nearly 70% of teams made the playoffs 4 years after tanking.  The percentage of tanking teams making the playoffs stays above 50% for years 4-9 after tanking.  
-
-![Imgur](http://i.imgur.com/edmxwTd.png)
-
-I think tanking is a really good idea.
 
