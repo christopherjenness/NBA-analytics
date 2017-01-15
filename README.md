@@ -1,8 +1,11 @@
 # NBA-analytics
 Short, offhand analyses of the NBA
 
+Note: All stats are from stats.nba.com
+
 ## Topics Covered 
 * Underrated Assisters
+* Westbrook Rebounding
 * Tanking
 * Emperical Bayes estimation of NBA statistics
 * James-Stein estimation of NBA statistics
@@ -28,6 +31,26 @@ Another thing I wanted to look at was if there are players whos assists are more
 Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
 
 ![Imgur](http://i.imgur.com/GscIYAi.png)
+
+## Westbrook Rebounding (January 2017)
+
+As of today, Russle Westbrook is averaging a triple double:
+* 30.8 PTS
+* 10.5 AST
+* **10.7 REB**
+
+How did he add 3 extra rebounds per game to his stat line?  He's just soaking up uncontested rebounds.
+
+![OKC](http://i.imgur.com/WyihSLb.png)
+
+When we look at uncontested rebounds, Westbrook is a clear outlier.  When we look at the rest of OKC, it appears he's taking uncontested rebounds from Adams and Kanter to pad his stats.
+
+Uncontested rebounds is a useless stat that pads your "Rebounds" in the box score.  Using the linear relation in the plot above, we can correct each players rebounds stats.  For example, **Russle Westbrook gets 8.3 uncontested rebounds a game**, but given he rebounding ability (contested rebounds per game), we can estimate that **he should only get 3.7 uncontested rebounds a game**. Using this correction, we see can now look at how many total rebounds players on OKC should get:
+
+* **Russle Westbrook should get 5.8 rebounds per game** (instead of 10.7)
+* **Enis Kanter should get 8.3 rebounds per game** (instead of 6.6)
+* **Steven Adams should get 9.4 rebounds per game** (instead of 7.6)
+
 
 ## Tanking (December 2016)
 If an NBA team "tanks" and gets a poor record, they are more likely to get the first pick in the following draft.  But how does the first pick change the course of a franchise?  Here we analyze the ten year trajectory of all teams since 1990 that obtained the first draft pick.
