@@ -21,6 +21,8 @@ def organize_data():
     a = beta.fit(list(df['3P%']),floc=0, fscale=1)[0]
     b =  beta.fit(list(df['3P%']),floc=0, fscale=1)[1]
     df['3PEstimate'] = (df['3PM'] + a) / (df['3PA'] + a + b)
+    df['a'] = df['3PM'] + a
+    df['b'] = df['3PA'] - df['3PM'] + b
     print('alpha: ' + str(a))
     print('beta: ' + str(b))
     return (df, a, b)
@@ -53,25 +55,22 @@ def make_plots(df, a, b):
     plt.title('Bayesian Estimation of 3PT%')
     plt.legend()
     plt.savefig('plots/estimation.png')
-    
+
     plt.figure()
     y1 = beta.pdf(x, a, b)
     y2 = beta.pdf(x, 58.54, 73.47)
-    plt.plot(x, y1, 'r-', lw=5, alpha=0.6, label='League\nDistribution')
-    plt.plot(x, y2, 'r-', lw=5, alpha=0.6, label='George\nHill')
+    plt.xlim(0.1, 0.7)
+    plt.plot(x, y1, 'r--', lw=1, alpha=0.6, label='League\nDistribution')
+    plt.plot(x, y2, 'b-', lw=1, alpha=0.6, label='George\nHill')
     plt.xlabel('3PT %')
     plt.ylabel('3PT% Estimate')
-    plt.title('Paul George \nBayesian Estimation of 3PT%')
+    plt.fill_between(x, 0, y2, where= (x>0.36) & (x<0.5285), alpha=0.6)
+    plt.title('George Hill \nBayesian Estimation of 3PT%')
     plt.legend()
-    plt.savefig('plots/paulgeorge.png')
+    plt.savefig('plots/georgehill.png')
 
-
-
-df.sort_values('3PEstimate', ascending=False)[['PLAYER',  '3PEstimate', 'a', 'b']]
-
+df.sort_values('3PEstimate', ascending=False)[['PLAYER',  '3PEstimate', '3P%', '3PA']].head()
 if __name__ == "__main__":
     set_plot_params(14)
     df, a, b = organize_data()
     make_plots(df, a, b)
-
-
