@@ -28,7 +28,7 @@ Another thing I wanted to look at was if there are players whos assists are more
 
 ![Imgur](http://i.imgur.com/9H7o0Zg.png)
 
-Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
+Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does not go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
 
 ![Imgur](http://i.imgur.com/GscIYAi.png)
 
@@ -62,8 +62,6 @@ How does a team's win percentage change after getting the top pick?  Teams peak 
 What about making the playoffs?  Again, teams peak four years after tanking.  The results are striking though.  Nearly 70% of teams made the playoffs 4 years after tanking.  The percentage of tanking teams making the playoffs stays above 50% for years 4-9 after tanking.  
 
 ![Imgur](http://i.imgur.com/edmxwTd.png)
-
-I think tanking is a really good idea.
 
 ## Emperical Bayes estimation of NBA statistics (January 2017)
 There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
@@ -180,9 +178,9 @@ and all time:
 
 ## Referee Analysis (November 2016)
 
-Refereeing in the NBAis an extremely hard job.  While all of the referees are professionals, they have different inclinations to blow there whistle. Here we analyze how many fouls were awarded by referees during the 2015-16 NBA season. Note: All data is normalized "per game".
+Refereeing in the NBA is an extremely hard job.  While all of the referees are professionals, they have different inclinations to blow there whistle. Here we analyze how many fouls were awarded by referees during the 2015-16 NBA season. Note: All data is normalized "per game".
 
-![Imgur](http://i.imgur.com/XEPcDQE.png)
+![Imgur](http://i.imgur.com/wc0fARA.png)
 
 When we look at the total free throws awarded for home and away teams, we see that 3 referees cluster away from the rest of the refs.  They slow down the game dramatically by awarding more FTA per game.  Refs are commonly accused of causing home-team advantage.  On the bright side, these 3 whistle-blowers don't seem to contribute to home-team advantage.
 
@@ -194,15 +192,15 @@ Who are these refs?
 
 When we combine all FTA awarded per game (home and away), it is immediately clear that these three refs are not like the rest of the reffing team in the NBA.
 
-![Imgur](http://i.imgur.com/Fm0nCy8.png)
+![Imgur](http://i.imgur.com/3Oq79II.png)
 
 What about personal fouls?  Are there refs that like to call a ton of personal fouls?
 
 In fact, a single ref calls much more personal fouls then the other refs.  Who is it? **Zach Zarba**
 
-![Imgur](http://i.imgur.com/lwCNmWR.png)
+![Imgur](http://i.imgur.com/O6i1qzj.png)
 
 So what about the other two refs that like to call a lot of shooting fouls?  When we break down each ref by how many personal fouls they call and how many shooting fouls they call, we see a linear correlation.  This makes sense: refs have a certain amount of 'trigger-happiness' and they don't discriminate by which type of fouls they are calling.  **Ken Maur** and **Josh Tiven**, on the other hand, like to call a high proportion of shooting fouls relative to personal fouls.  What does that mean?  I have no idea.
 
-![Imgur](http://i.imgur.com/QogogTU.png)
+![Imgur](http://i.imgur.com/7OTi0G3.png)
 
