@@ -16,7 +16,7 @@ Note: All stats are from stats.nba.com
 
 I wanted to look into underrated assisters in the NBA.  Players who are really good at creating plays by passing, but don't necessarily rake up traditional "Assists" in their box score.  I thought I would find players who are thought to be bad/average, but are actually elite.  What I ended up finding is that a few elite players are even more elite than we think.
 
-First, are there players who don't get a ton of traditional assists, but get a lots of "Secondary Assists".  The guy who passes it to the assister.  The hockey assist.  The answer is **Steph Curry**.  Below, I'm plotting the total primary and secondary assists of every player in the NBA this season.
+First, are there players who don't get a ton of traditional assists, but get a lots of "Secondary Assists"?  The guy who passes it to the assister.  The hockey assist.  The answer is **Steph Curry**.  Below, I'm plotting the total primary and secondary assists of every player in the NBA this season.
 
 ![Imgur](http://i.imgur.com/bTyXA34.png)
 
@@ -24,7 +24,7 @@ In fact, the **Warriors** are a standout team when it comes to total hockey assi
 
 ![Imgur](http://i.imgur.com/iwv27o1.png)
 
-Another thing I wanted to look at was if there are players whos assists are more valuable than other players.  If a player assists a lot of 3PT shots, that is more valuable than a lot of 2PT assists.  Again, it turnss out that two all-stars, **LeBron James** and **James Harden** are at the top of this list.  My favorite anomaly in this category is **Harrison Barnes** who has 34 3PT Assists and 3 2PT Assists.  He exclusively assists to 3PT shooters.  
+Another thing I wanted to look at was if there are players whos assists are more valuable than other players.  If a player assists a lot of 3PT shots, that is more valuable than a lot of 2PT assists.  Again, it turns out that two all-stars, **LeBron James** and **James Harden** are at the top of this list.  My favorite anomaly in this category is **Harrison Barnes** who has 34 3PT Assists and 3 2PT Assists.  He exclusively assists to 3PT shooters.  
 
 ![Imgur](http://i.imgur.com/9H7o0Zg.png)
 
