@@ -5,6 +5,7 @@ Note: All stats are from stats.nba.com
 
 ## Topics Covered 
 * Underrated Assisters
+* Shot Clock Analysis
 * Westbrook Rebounding
 * Rim Protection
 * Tanking
@@ -32,6 +33,22 @@ Another thing I wanted to look at was if there are players whos assists are more
 Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does not go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
 
 ![Imgur](http://i.imgur.com/GscIYAi.png)
+
+## Shot Clock Analysis (January 2017)
+
+Casually watching the NBA, you notice that as the shot clock wears down, teams settle for worse shots.  Here we analyze why this happens.
+
+First, do teams actually take worse shots when the shot clock winds down?  If we look at eFG% for all shots taken this season binned by time left on the shot clock, we see that teams take much worse shots when the shot clock is near 0.  **eFG% drops by over 10% late in the shot clock.**
+
+![Imgur](http://i.imgur.com/TL9shiu.png)
+
+Why is this the case?  When we break down what shots players are taking, we see that late in the shot clock, players take more mid range shots (a low eFG% shot).  This is at the expense of shots in the restricted area.  Interestingly, 3PT shots are relatively unaffected by the shotclock.  To summarize: **as the shot clock winds down, players shift from taking shots in the restricted area to the mid range.**
+
+![Imgur](http://i.imgur.com/G95sn2J.png)
+
+I thought it would be interesting to look at teams that are unnafeted by the shotclock.  What I found was that nearly every team drops in eFG% as the shot clock runs down.  However, *The Spurs* and *The Bucks* maintain their eFG% as the shot runs down.  Below, I am plotting two teams eFG% side by side.  You see that Portland is affected by the shot clock (like most teams), while Milwaukee is relatively unaffected.
+
+![Imgur](http://i.imgur.com/34QKNAN.png)
 
 ## Westbrook Rebounding (January 2017)
 
