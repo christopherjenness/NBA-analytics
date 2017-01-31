@@ -62,11 +62,11 @@ Here, we addressed this question by comparing centers that stayed on the same te
 
 What we see is when a center stays on the same team, their rim protecting abilities is consistent from one year to the next (r=0.54).  [This has been previously documented](http://fansided.com/2017/01/12/nylon-calculus-shot-defense-metrics-actions/). 
 
-![consistent](rimprotection/plots/different.png)
+![consistent](analysis/rimprotection/plots/different.png)
 
 Interestingly though, when a center changes teams, his rim protecting ability is essentially uncorrelated with his previous year's ability (r=0.20).  This dichotomy indicates that the team defensive system plays a large part of how well a center can defend the rim.
 
-![diff](rimprotection/plots/consistent.png)
+![diff](analysis/rimprotection/plots/consistent.png)
 
 Perhaps Festus (when healthy) may not be able to solve the Blazers's problems.
 
