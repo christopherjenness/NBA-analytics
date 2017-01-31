@@ -6,6 +6,7 @@ Note: All stats are from stats.nba.com
 ## Topics Covered 
 * Underrated Assisters
 * Westbrook Rebounding
+* Rim Protection
 * Tanking
 * Emperical Bayes estimation of NBA statistics
 * James-Stein estimation of NBA statistics
@@ -51,6 +52,23 @@ Uncontested rebounds is a useless stat that pads your "Rebounds" in the box scor
 * **Enis Kanter should get 8.3 rebounds per game** (instead of 6.6)
 * **Steven Adams should get 9.4 rebounds per game** (instead of 7.6)
 
+## Rim Protection (January 2017)
+
+The idea for this analysis came through discussions with [Justin Palmer](https://github.com/Caged)
+
+There is lots of talk that Portland Trail Blazers currently need a rim protector.  But with Dame and CJ being such poor perimeter defenders (letting everyone past them), could a good rim protector pick up the slack?  At the heart of the question, is a good rim protector a product of their team?  Or is rim protection an individual skill?
+
+Here, we addressed this question by comparing centers that stayed on the same team for two consecutive years and rim protectors that changed teams.  The statistic used to quantify rim protection is opponent FG% at the rim.
+
+What we see is when a center stays on the same team, their rim protecting abilities is consistent from one year to the next (r=0.54).  [This has been previously documented](http://fansided.com/2017/01/12/nylon-calculus-shot-defense-metrics-actions/). 
+
+![consistent](analysis/rimprotection/plots/different.png)
+
+Interestingly though, when a center changes teams, his rim protecting ability is essentially uncorrelated with his previous year's ability (r=0.20).  This dichotomy indicates that the team defensive system plays a large part of how well a center can defend the rim.
+
+![diff](analysis/rimprotection/plots/consistent.png)
+
+Perhaps Festus (when healthy) may not be able to solve the Blazers's problems.
 
 ## Tanking (December 2016)
 If an NBA team "tanks" and gets a poor record, they are more likely to get the first pick in the following draft.  But how does the first pick change the course of a franchise?  Here we analyze the ten year trajectory of all teams since 1990 that obtained the first draft pick.
