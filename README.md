@@ -42,11 +42,11 @@ First, do teams actually take worse shots when the shot clock winds down?  If we
 
 ![Imgur](http://i.imgur.com/TL9shiu.png)
 
-Why is this the case?  When we break down what shots players are taking, we see that late in the shot clock, players take more mid range shots (a low eFG% shot).  This is at the expense of shots in the restricted area.  Interestingly, 3PT shots are relatively unaffected by the shotclock.  To summarize: **as the shot clock winds down, players shift from taking shots in the restricted area to the mid range.**
+Why is this the case?  When we break down what shots players are taking, we see that late in the shot clock players take more mid range shots (a low eFG% shot).  This is at the expense of shots in the restricted area.  Interestingly, 3PT shots are relatively unaffected by the shotclock.  To summarize: **as the shot clock winds down, players shift from taking shots in the restricted area to the mid range.**
 
 ![Imgur](http://i.imgur.com/G95sn2J.png)
 
-I thought it would be interesting to look at teams that are unnafeted by the shotclock.  What I found was that nearly every team drops in eFG% as the shot clock runs down.  However, *The Spurs* and *The Bucks* maintain their eFG% as the shot runs down.  Below, I am plotting two teams eFG% side by side.  You see that Portland is affected by the shot clock (like most teams), while Milwaukee is relatively unaffected.
+I thought it would be interesting to look at teams that are unnafeted by the shotclock.  What I found was that nearly every team drops in eFG% as the shot clock runs down.  However, **The Spurs** and **The Bucks** maintain their eFG% as the shot runs down.  Below, I am plotting two teams eFG% side by side.  You see that Portland is affected by the shot clock (like most teams), while Milwaukee is relatively unaffected.
 
 ![Imgur](http://i.imgur.com/34QKNAN.png)
 
