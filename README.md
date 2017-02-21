@@ -121,7 +121,7 @@ As you can see, most players are dialed toward the league average.
 
 Here are some interesting results for players's Emperical Bayes 3PT% estimate:
 
-* Even though **James Jones** has the highest 3PT% (43%), he has only taken 28 3's, so his emperical bayes estimate is only 51%.
+* Even though **James Jones** has the highest 3PT% (51%), he has only taken 28 3's, so his emperical bayes estimate is only 43%.
 * **George Hill** has the highest 3PT% Estimate (44%)
 * The other players in the top 5 are **Kyle Lowry, Danny Green, and JJ Redick**
 
