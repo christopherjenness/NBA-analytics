@@ -46,13 +46,13 @@ Why is this the case?  When we break down what shots players are taking, we see 
 
 ![Imgur](http://i.imgur.com/G95sn2J.png)
 
-I thought it would be interesting to look at teams that are unnafeted by the shotclock.  What I found was that nearly every team drops in eFG% as the shot clock runs down.  However, **The Spurs** and **The Bucks** maintain their eFG% as the shot runs down.  Below, I am plotting two teams eFG% side by side.  You see that Portland is affected by the shot clock (like most teams), while Milwaukee is relatively unaffected.
+I thought it would be interesting to look at teams that are unaffeted by the shotclock.  What I found was that nearly every team drops in eFG% as the shot clock runs down.  However, **The Spurs** and **The Bucks** maintain their eFG% as the shot runs down.  Below, I am plotting two teams eFG% side by side.  You see that Portland is affected by the shot clock (like most teams), while Milwaukee is relatively unaffected.
 
 ![Imgur](http://i.imgur.com/34QKNAN.png)
 
 ## Westbrook Rebounding (January 2017)
 
-As of today, Russle Westbrook is averaging a triple double:
+As of today, Russell Westbrook is averaging a triple double:
 * 30.8 PTS
 * 10.5 AST
 * **10.7 REB**
@@ -121,7 +121,7 @@ As you can see, most players are dialed toward the league average.
 
 Here are some interesting results for players's Emperical Bayes 3PT% estimate:
 
-* Even though **James Jones** has the highest 3PT% (43%), he has only taken 28 3's, so his emperical bayes estimate is only 51%.
+* Even though **James Jones** has the highest 3PT% (51%), he has only taken 28 3's, so his emperical bayes estimate is only 43%.
 * **George Hill** has the highest 3PT% Estimate (44%)
 * The other players in the top 5 are **Kyle Lowry, Danny Green, and JJ Redick**
 
