@@ -39,7 +39,7 @@ Finally, I thought I could find underrated assisters by looking at "Potential As
 
 Intuition says certain play-types are not as efficient as others (for example, post-ups probably aren't very efficient).  Here we break down each play-type in the NBA and analyze each play type's efficiency (points per possession, PPP).
 
-First, **How efficient is each play?**  For this whole analysis, we are using points per possession (PPP) as the measure of efficiency.  Below we are plotting each teams PPP for each play type. What we see matches canonical intuition: Cutting to the basket and plays in transition are very efficient.  Isolation plays and pos-ups are not efficient.  Somewhat surprisingly, Pick and Rolls where the ball handler finishes is not an efficient play (regardless of team).
+First, **How efficient is each play?**  For this whole analysis, we are using points per possession (PPP) as the measure of efficiency.  **Below we are plotting each teams PPP for each play type**. What we see matches canonical intuition: Cutting to the basket and plays in transition are very efficient.  Isolation plays and pos-ups are not efficient.  Somewhat surprisingly, Pick and Rolls where the ball handler finishes is not an efficient play (regardless of team).
 
 ![PPP by play](analysis/play-type-ppp/plots/swarm.png)
 
