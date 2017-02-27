@@ -45,11 +45,7 @@ First, **How efficient is each play?**  For this whole analysis, we are using po
 
 I thought this could be used to identify teams that are running too many inefficient plays or teams that are not running enough efficient plays.  
 
-For example, are there teams that run too many pick and rolls with the roll man finishing?  There are ten teams that stand out as teams that run a high percentage of pick and rolls while being very inefficient at it:
-
-![PR roll](analysis/play-type-ppp/plots/PRroll.png)
-
-What about isolation plays (a classically inefficient play)? **Mavericks, Knicks, and Clippers** stand out as teams that over-utilize isolation plays for how effective they are. (I would argue all teams over-utilize isolation plays, but these are the stand-out teams).
+For example, are there teams that run too many isolation plays (a classically inefficient play)? **Mavericks, Knicks, and Clippers** stand out as teams that over-utilize isolation plays for how effective they are. (I would argue all teams over-utilize isolation plays, but these are the stand-out teams).
 
 ![isolation](analysis/play-type-ppp/plots/isolation.png)
 
