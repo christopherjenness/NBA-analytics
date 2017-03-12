@@ -21,7 +21,7 @@ def make_mia_plots(df, team):
     plt.axes(axs[0])
     team['PTSperDRIVE'] = team['PTS']/team['DRIVES']
     team = team.sort_values('PTSperDRIVE')
-    sns.barplot(x =team.index.values, y=team['PTSperDRIVE'], color='seagreen')
+    sns.barplot(x = team.index.values, y=team['PTSperDRIVE'], color='seagreen')
     plt.xticks(rotation=90)
     plt.ylabel('PTS per drive')
     plt.title('Points per drive by team')
@@ -29,43 +29,68 @@ def make_mia_plots(df, team):
     plt.axes(axs[1])
     mia = df[df.TEAM == 'MIA']
     mia = mia.sort_values('DRIVES')
-    sns.barplot(x = mia['PLAYER'], y=mia['DRIVES'], color='seagreen')
+    names = list(mia['PLAYER'])
+    last_names = [name.split(' ')[1] for name in names]
+    sns.barplot(x = last_names, y=mia['DRIVES'], color='seagreen', ci=False)
     plt.xticks(rotation=90)
     plt.xlabel('')
     plt.ylabel('Total Drives')
     plt.title('Total drives for MIA players')
+    plt.tight_layout()
     plt.savefig('plots/teams')
 
-plt.scatter(team.DRIVES, team.PTS)
+def make_dragic_plots(df):
+    df['Dragic'] = df.PLAYER == 'Goran Dragic'
+    dragic = df[df['Dragic'] == True]
+    not_dragic = df[df['Dragic'] != True]
+    
+    fig, axs = plt.subplots(1, 2, figsize=(16, 6))
+    plt.axes(axs[1])
+    plt.scatter(not_dragic.PASS, not_dragic.AST,  c=sns.xkcd_palette(['amber']), label='League')
+    plt.scatter(dragic.PASS, dragic.AST,  c=sns.xkcd_palette(['windows blue']), label='Dragic')
+    plt.xlim(0, 350)
+    plt.ylim(0, 120)
+    plt.ylabel('Passes out of drives')
+    plt.xlabel('Assists out of drives')
+    plt.title('Dragic is not an exceptional assister')
+    
+    plt.axes(axs[0])
+    plt.scatter(not_dragic.DRIVES, not_dragic.PASS,  c=sns.xkcd_palette(['amber']), label='League')
+    plt.scatter(dragic.DRIVES, dragic.PASS,  c=sns.xkcd_palette(['windows blue']), label='Dragic')
+    plt.xlim(0)
+    plt.ylim(0)
+    plt.xlabel('Passes out of drives')
+    plt.ylabel('Total drives')
+    plt.title('Dragic likes to pass out of drives')
+    legend = plt.legend(frameon=True, loc=4)
+    frame = legend.get_frame()
+    frame.set_edgecolor('black')
+    plt.savefig('plots/dragicPASS')
+    
+    fig, axs = plt.subplots(1, 2, figsize=(16, 6))
+    plt.axes(axs[0])
+    plt.scatter(not_dragic.DRIVES, not_dragic.FTA,  c=sns.xkcd_palette(['amber']), label='League')
+    plt.scatter(dragic.DRIVES, dragic.FTA,  c=sns.xkcd_palette(['windows blue']), label='Dragic')
+    plt.xlim(0)
+    plt.ylim(0)
+    plt.xlabel('Total Drives')
+    plt.ylabel('Free throws from drives')
+    plt.title('Dragic does not get to the line from drives')
+    
+    plt.axes(axs[1])
+    plt.scatter(not_dragic.DRIVES, not_dragic.FGM,  c=sns.xkcd_palette(['amber']), label='League')
+    plt.scatter(dragic.DRIVES, dragic.FGM,  c=sns.xkcd_palette(['windows blue']), label='Dragic')
+    plt.xlim(0)
+    plt.ylim(0)
+    plt.ylabel('Made field goals from drives')
+    plt.xlabel('Total drives')
+    plt.title('Dragic does not make shots from drives')
+    legend = plt.legend(frameon=True, loc=4)
+    frame = legend.get_frame()
+    frame.set_edgecolor('black')
+    plt.savefig('plots/dragicSHOTS')
 
-df['Dragic'] = df.PLAYER == 'Goran Dragic'
-df.sort('PASS')[['PLAYER', 'PASS', 'DRIVES']]
-
-plt.scatter(df.DRIVES, df.FGM, c=df['Dragic'])
-plt.scatter(df.DRIVES, df.FTA, c=df['Dragic'])
-plt.scatter(df.DRIVES, df.PASS)
-plt.scatter(df.PASS, df.AST, c=df['Dragic'])
-plt.scatter(df.FGA, df.AST)
-
-df.columns.values[2:]
-
-sns.pairplot(df, x_vars = 'DRIVES', y_vars=df.columns.values[2:])
-plt.savefig('player')
-
-sns.pairplot(team, x_vars = 'DRIVES', y_vars=team.columns.values[2:])
-plt.savefig('team')
-
-team['PTS']/team['DRIVES']
-
-df, team = load_data()
-make_mia_plots(df, team)
-
-plt.scatter(df['DRIVES'], df['PASS'], c=df['Dragic'])
-plt.xlim(0, 900)
-plt.ylim(0, 350)
-plt.xlabel('Total Drives')
-plt.ylabel('Total passes out of drives')
-plt.title('Dragic likes to pass out of drives')
-plt.savefig('plots/dragicPASS')
-
-sns.regplot(MIA['PASS'], MIA['AST'])
+if __name__ == '__main__':
+    df, team = load_data()
+    make_mia_plots(df, team)
+    make_dragic_plots(df)
