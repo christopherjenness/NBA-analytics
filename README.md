@@ -5,6 +5,7 @@ Note: All stats are from stats.nba.com
 
 ## Topics Covered 
 * Underrated Assisters
+* Which teams run the wrong plays?
 * Shot Clock Analysis
 * Westbrook Rebounding
 * Rim Protection
@@ -33,6 +34,28 @@ Another thing I wanted to look at was if there are players whos assists are more
 Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does not go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
 
 ![Imgur](http://i.imgur.com/GscIYAi.png)
+
+## Which teams run the wrong plays? (February 2017)
+
+Intuition says certain play-types are not as efficient as others (for example, post-ups probably aren't very efficient).  Here we break down each play-type in the NBA and analyze each play type's efficiency (points per possession, PPP).
+
+First, **How efficient is each play?**  For this whole analysis, we are using points per possession (PPP) as the measure of efficiency.  **Below we are plotting each teams PPP for each play type**. What we see matches canonical intuition: Cutting to the basket and plays in transition are very efficient.  Isolation plays and pos-ups are not efficient.  Somewhat surprisingly, Pick and Rolls where the ball handler finishes is not an efficient play (regardless of team).
+
+![PPP by play](analysis/play-type-ppp/plots/swarm.png)
+
+I thought this could be used to identify teams that are running too many inefficient plays or teams that are not running enough efficient plays.  
+
+For example, are there teams that run too many isolation plays (a classically inefficient play)? **Mavericks, Knicks, and Clippers** stand out as teams that over-utilize isolation plays for how effective they are. (I would argue all teams over-utilize isolation plays, but these are the stand-out teams).
+
+![isolation](analysis/play-type-ppp/plots/isolation.png)
+
+Are there teams that under-utilize certain plays?  Teams that are very effective at a certain play type, but hardly use it? **The Thunder, Timberwolves, Heat, and Jazz** are all very effective at plays coming off screens, but they hardly use it.  Perhaps they should try to utilize this more often.  The Warriors are an example of a team that uses off-screen plays a lot, while being efficient at it.
+
+![offscreen](analysis/play-type-ppp/plots/offscreen.png)
+
+Below, I'm plotting the distribution of all play-types points per possession and frequency (for each team). This is an overly busy graph, but it is nice to see the distribution of teams.  Also, if you want to dig into the actual numbers, the code can be found in `analysis/play-type-ppp/playPPP.py`
+
+![busy-scatter](analysis/play-type-ppp/plots/PPPscatter.png)
 
 ## Shot Clock Analysis (January 2017)
 
