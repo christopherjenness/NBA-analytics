@@ -5,6 +5,7 @@ Note: All stats are from stats.nba.com
 
 ## Topics Covered 
 * Underrated Assisters
+* Why is Miami the worst team at drives?
 * Which teams run the wrong plays?
 * Shot Clock Analysis
 * Westbrook Rebounding
@@ -34,6 +35,22 @@ Another thing I wanted to look at was if there are players whos assists are more
 Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does not go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
 
 ![Imgur](http://i.imgur.com/GscIYAi.png)
+
+## Why is Miami the worst team at drives? (March 2017)
+
+Driving to the basket is standard in the NBA.  You can make a layup, get fouled, or kick it out for a 3PT assist.  I was curious which teams were good or bad at driving to the basket.  It turned out, Miami gets the least points per drive of any team in the NBA (see below).  To figure out why, first, note that Dragic is the main "driver" of The Heat.
+
+![Teams](http://i.imgur.com/9UNL1VW.png)
+
+So why is do Dragic drives not lead to points?  First, for the high number of drives Dragic commits, he hardly gets fouled.  He has commited ~700 drives so far this season, but he gets fouled at the rate of someone who only has ~350 drives.  Fouls are by far the most efficient way to end a drive.
+
+Additionally, he is not great at making baskets out of drives.  He is not as much of an anomoly here, but he is still on the low end.
+
+![DragicShots](http://i.imgur.com/ndgaTMQ.png)
+
+So what does Dragic do out of drives?  Dragic loves to pass out of drives.  He really stands out as someone who loves to pass when he drives.  Unfortunately, he is not very efficient in turning those passes in to assists.  Perhaps he needs to commit to the drive more often.
+
+![DragicPass](http://i.imgur.com/DUg2thx.png)
 
 ## Which teams run the wrong plays? (February 2017)
 
