@@ -114,7 +114,7 @@ Uncontested rebounds is a useless stat that pads your "Rebounds" in the box scor
 
 What happens to a player's efficiency as they age?  Does their offense or defense start falling off first?  Here, we combine data from 2000-2016 NBA seasons to address this question.
 
-**As players age, their offensive efficiency goes up, while their defensive efficiency goes down.**  My guess is, players improve on offense due to techincal and intellectual gains, but decrease on defense because they exert less effort on the defensive end.
+**As players age, their offensive efficiency goes up, while their defensive efficiency goes down.**  My guess is, players improve on offense due to technical and intellectual gains, but decrease on defense because they exert less effort on the defensive end.
 
 ![Efficiency](analysis/age-efficiency/plots/rating.png)
 
