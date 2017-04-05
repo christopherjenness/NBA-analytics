@@ -9,6 +9,7 @@ Note: All stats are from stats.nba.com
 * Which teams run the wrong plays?
 * Shot Clock Analysis
 * Westbrook Rebounding
+* Aging player's efficiency
 * Rim Protection
 * Tanking
 * Emperical Bayes estimation of NBA statistics
@@ -108,6 +109,24 @@ Uncontested rebounds is a useless stat that pads your "Rebounds" in the box scor
 * **Russle Westbrook should get 5.8 rebounds per game** (instead of 10.7)
 * **Enis Kanter should get 8.3 rebounds per game** (instead of 6.6)
 * **Steven Adams should get 9.4 rebounds per game** (instead of 7.6)
+
+## Aging Player's efficiency
+
+What happens to a player's efficiency as they age?  Does their offense or defense start falling off first?  Here, we combine data from 2000-2016 NBA seasons to address this question.
+
+**As players age, their offensive efficiency goes up, while their defensive efficiency goes down.**  My guess is, players improve on offense due to techincal and intellectual gains, but decrease on defense because they exert less effort on the defensive end.
+
+![Efficiency](analysis/age-efficiency/plots/rating.png)
+
+Do players get smarter as they age?  **Players commit less turnovers and commit less fouls as they age.**
+
+![TOV](analysis/age-efficiency/plots/TOV.png)
+
+![PF](analysis/age-efficiency/plots/PF.png)
+
+How do player's offensive game change?  **Players take less shots and start assisting more as they age.**
+
+![FGA](analysis/age-efficiency/plots/FGA.png)
 
 ## Rim Protection (January 2017)
 
