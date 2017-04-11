@@ -65,18 +65,20 @@ def make_plots(df):
         team_data['relative%'] = team_data['win%'] - float(starting_point)
         relative_points = relative_points.append(team_data)
         
-    plt.figure()
+    plt.figure(figsize=(12, 9))
     sns.boxplot(relative_points['years_since'], relative_points['relative%'])
     plt.xlabel('Years since obtaining 1st pick')
     plt.ylabel('Win Percent difference')
     plt.title('10 year trajectory after obtaining 1st pick')
+    plt.savefig('trajectory')
     
-    plt.figure()
+    plt.figure(figsize=(12, 9))
     df['Playoffs'] = df['win%'] > 0.5
     df.groupby('years_since').mean()['Playoffs'].plot(kind='bar')
     plt.xlabel('Years since obtaining 1st pick')
     plt.ylabel('Percentage of teams making playoffs')
     plt.title('10 year trajectory after obtaining 1st pick')
+    plt.savefig('trajectory-2')
 
 if __name__ == "__main__":
     set_plot_params(22)
@@ -86,4 +88,5 @@ if __name__ == "__main__":
     cols = ['team', 'season', 'years_since', 'win%']
     df = pd.DataFrame(data = data, columns = cols)
     make_plots(df)
+
 

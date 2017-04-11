@@ -127,8 +127,20 @@ def make_plots(dfs):
     plt.tight_layout()
     plt.savefig('plots/STL')
 
+
 if __name__ == '__main__':
     urls = get_URLS()
     dfs = get_all_dfs(urls)
     set_plot_params(20)
     make_plots(dfs)
+
+df = dfs['westbru01']
+
+df.columns.values
+df = df.dropna(subset=['G'])
+df = df[df['G'].astype(str) != 'G']
+
+plt.ion()
+x = df['AST'].astype(int)
+y = df['TRB'].astype(int)
+plt.scatter(x, y)
