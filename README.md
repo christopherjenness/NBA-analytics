@@ -5,6 +5,7 @@ Note: All stats are from stats.nba.com
 
 ## Topics Covered 
 * Underrated Assisters
+* Consistent Players
 * Why is Miami the worst team at drives?
 * Which teams run the wrong plays?
 * Shot Clock Analysis
@@ -36,6 +37,29 @@ Another thing I wanted to look at was if there are players whos assists are more
 Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does not go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
 
 ![Imgur](http://i.imgur.com/GscIYAi.png)
+
+## Consistent Players (April 2017)
+
+Analyst typically say things like "Player X brings it every night" or "Player X will give you 15, 5, and 5 every night".  Here we try to quantify how consistent players are. The conclusion is that **LeBron James is a very consistent player.**
+
+Here, we use gamelogs from the 2016-17 season.  To get a sense of how consistent a player is, we take the standard deviation of a statistic over all games in the season.  **A lower standard deviation is indicative of a more consistent player.**
+
+Who are the most consistent scorers?  Here we see that **LeBron James is one of the most consistent scoreres in the league**.  He scores over 25 PTS/game, and does so very consistently.  Other players are more consistent, but score much less points than him.
+
+![PTS](analysis/consistency/plots/PTS.png)
+
+What about getting to the free throw line?  Again, Lebron is an outlier.  He is very consistent in getting to the free throw line.
+
+![FTA](analysis/consistency/plots/FTA.png)
+
+Same with rebounds and steals.  LeBron is a very consistent player.
+
+![TRB](analysis/consistency/plots/TRB.png)
+
+![STL](analysis/consistency/plots/STL.png)
+
+Note, if you look carefully at the steals plot above, you see an extreme outlier at about 1 steal per game.  That player is Zach Lavine.  If you want to be sure to get a steal per game, you should have Zach Lavine on your team.
+
 
 ## Why is Miami the worst team at drives? (March 2017)
 
