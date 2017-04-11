@@ -42,13 +42,13 @@ Finally, I thought I could find underrated assisters by looking at "Potential As
 
 Analyst typically say things like "Player X brings it every night" or "Player X will give you 15, 5, and 5 every night".  Here we try to quantify how consistent players are. The conclusion is that **LeBron James is a very consistent player.**
 
-Here, we use gamelogs from the 2016-17 season.  To get a sense of how consistent a player is, we take the standard deviation of a statistic over all games in the season.  **A lower standard deviation is indicative of a more consistent player.**
+Here, we use game logs from the 2016-17 season.  To get a sense of how consistent a player is, we take the standard deviation of a statistic over all games in the season.  **A lower standard deviation is indicative of a more consistent player.**
 
-Who are the most consistent scorers?  Here we see that **LeBron James is one of the most consistent scoreres in the league**.  He scores over 25 PTS/game, and does so very consistently.  Other players are more consistent, but score much less points than him.
+Who are the most consistent scorers?  Here we see that **LeBron James is one of the most consistent scorers in the league**.  He scores over 25 PTS/game, and does so very consistently.  Other players are more consistent, but score much less points than him.
 
 ![PTS](analysis/consistency/plots/PTS.png)
 
-What about getting to the free throw line?  Again, Lebron is an outlier.  He is very consistent in getting to the free throw line.
+What about getting to the free throw line?  Again, LeBron is an outlier.  He is very consistent at getting to the free throw line.
 
 ![FTA](analysis/consistency/plots/FTA.png)
 
