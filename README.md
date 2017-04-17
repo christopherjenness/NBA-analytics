@@ -16,7 +16,6 @@ Note: All stats are from stats.nba.com
 * Empirical Bayes estimation of NBA statistics
 * James-Stein estimation of NBA statistics
 * Player Efficiency Rating (PER)
-* Referee Analysis
 
 ## Underrated Assisters (December 2016)
 
@@ -294,32 +293,4 @@ If anyone is interested, here are the top and bottom PERs from last season:
 and all time:
 
 ![Imgur](http://i.imgur.com/TDGj2ef.png)
-
-## Referee Analysis (November 2016)
-
-Refereeing in the NBA is an extremely hard job.  While all of the referees are professionals, they have different inclinations to blow there whistle. Here we analyze how many fouls were awarded by referees during the 2015-16 NBA season. Note: All data is normalized "per game".
-
-![Imgur](http://i.imgur.com/wc0fARA.png)
-
-When we look at the total free throws awarded for home and away teams, we see that 3 referees cluster away from the rest of the refs.  They slow down the game dramatically by awarding more FTA per game.  Refs are commonly accused of causing home-team advantage.  On the bright side, these 3 whistle-blowers don't seem to contribute to home-team advantage.
-
-Who are these refs?
-
-* **Ken Maur**
-* **Josh Tiven**
-* **Zach Zarba**
-
-When we combine all FTA awarded per game (home and away), it is immediately clear that these three refs are not like the rest of the reffing team in the NBA.
-
-![Imgur](http://i.imgur.com/3Oq79II.png)
-
-What about personal fouls?  Are there refs that like to call a ton of personal fouls?
-
-In fact, a single ref calls much more personal fouls then the other refs.  Who is it? **Zach Zarba**
-
-![Imgur](http://i.imgur.com/O6i1qzj.png)
-
-So what about the other two refs that like to call a lot of shooting fouls?  When we break down each ref by how many personal fouls they call and how many shooting fouls they call, we see a linear correlation.  This makes sense: refs have a certain amount of 'trigger-happiness' and they don't discriminate by which type of fouls they are calling.  **Ken Maur** and **Josh Tiven**, on the other hand, like to call a high proportion of shooting fouls relative to personal fouls.  What does that mean?  I have no idea.
-
-![Imgur](http://i.imgur.com/7OTi0G3.png)
 
