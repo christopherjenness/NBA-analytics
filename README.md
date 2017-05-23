@@ -13,10 +13,9 @@ Note: All stats are from stats.nba.com
 * Aging player's efficiency
 * Rim Protection
 * Tanking
-* Emperical Bayes estimation of NBA statistics
+* Empirical Bayes estimation of NBA statistics
 * James-Stein estimation of NBA statistics
 * Player Efficiency Rating (PER)
-* Referee Analysis
 
 ## Underrated Assisters (December 2016)
 
@@ -30,11 +29,11 @@ In fact, the **Warriors** are a standout team when it comes to total hockey assi
 
 ![Imgur](http://i.imgur.com/iwv27o1.png)
 
-Another thing I wanted to look at was if there are players whos assists are more valuable than other players.  If a player assists a lot of 3PT shots, that is more valuable than a lot of 2PT assists.  Again, it turns out that two all-stars, **LeBron James** and **James Harden** are at the top of this list.  My favorite anomaly in this category is **Harrison Barnes** who has 34 3PT Assists and 3 2PT Assists.  He exclusively assists to 3PT shooters.  
+Another thing I wanted to look at was if there are players who's assists are more valuable than other players.  If a player assists a lot of 3PT shots, that is more valuable than a lot of 2PT assists.  Again, it turns out that two all-stars, **LeBron James** and **James Harden** are at the top of this list.  My favorite anomaly in this category is **Harrison Barnes** who has 34 3PT Assists and 3 2PT Assists.  He exclusively assists to 3PT shooters.  
 
 ![Imgur](http://i.imgur.com/9H7o0Zg.png)
 
-Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does not go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentiall have a 2:1 ratio of potential assists to assists.  
+Finally, I thought I could find underrated assisters by looking at "Potential Assists".  A Potential Assist is a pass that leads to a shot, even if the shot does not go in.  I thougt this could be used to find players who are good as passing, but they are on bad teams and the shooter never makes the shot.  I turned out to be wrong: All players in the NBA essentially have a 2:1 ratio of potential assists to assists.  
 
 ![Imgur](http://i.imgur.com/GscIYAi.png)
 
@@ -67,9 +66,10 @@ Driving to the basket is standard in the NBA.  You can make a layup, get fouled,
 
 ![Teams](http://i.imgur.com/9UNL1VW.png)
 
-So why is do Dragic drives not lead to points?  First, for the high number of drives Dragic commits, he hardly gets fouled.  He has commited ~700 drives so far this season, but he gets fouled at the rate of someone who only has ~350 drives.  Fouls are by far the most efficient way to end a drive.
+So why is do Dragic drives not lead to points?  First, for the high number of drives Dragic 
+s, he hardly gets fouled.  He has committed ~700 drives so far this season, but he gets fouled at the rate of someone who only has ~350 drives.  Fouls are by far the most efficient way to end a drive.
 
-Additionally, he is not great at making baskets out of drives.  He is not as much of an anomoly here, but he is still on the low end.
+Additionally, he is not great at making baskets out of drives.  He is not as much of an anomaly here, but he is still on the low end.
 
 ![DragicShots](http://i.imgur.com/ndgaTMQ.png)
 
@@ -81,7 +81,7 @@ So what does Dragic do out of drives?  Dragic loves to pass out of drives.  He r
 
 Intuition says certain play-types are not as efficient as others (for example, post-ups probably aren't very efficient).  Here we break down each play-type in the NBA and analyze each play type's efficiency (points per possession, PPP).
 
-First, **How efficient is each play?**  For this whole analysis, we are using points per possession (PPP) as the measure of efficiency.  **Below we are plotting each teams PPP for each play type**. What we see matches canonical intuition: Cutting to the basket and plays in transition are very efficient.  Isolation plays and pos-ups are not efficient.  Somewhat surprisingly, Pick and Rolls where the ball handler finishes is not an efficient play (regardless of team).
+First, **How efficient is each play?**  For this whole analysis, we are using points per possession (PPP) as the measure of efficiency.  **Below we are plotting each teams PPP for each play type**. What we see matches canonical intuition: Cutting to the basket and plays in transition are very efficient.  Isolation plays and post-ups are not efficient.  Somewhat surprisingly, Pick and Rolls where the ball handler finishes is not an efficient play (regardless of team).
 
 ![PPP by play](analysis/play-type-ppp/plots/swarm.png)
 
@@ -111,7 +111,7 @@ Why is this the case?  When we break down what shots players are taking, we see 
 
 ![Imgur](http://i.imgur.com/G95sn2J.png)
 
-I thought it would be interesting to look at teams that are unaffeted by the shotclock.  What I found was that nearly every team drops in eFG% as the shot clock runs down.  However, **The Spurs** and **The Bucks** maintain their eFG% as the shot runs down.  Below, I am plotting two teams eFG% side by side.  You see that Portland is affected by the shot clock (like most teams), while Milwaukee is relatively unaffected.
+I thought it would be interesting to look at teams that are unaffected by the shotclock.  What I found was that nearly every team drops in eFG% as the shot clock runs down.  However, **The Spurs** and **The Bucks** maintain their eFG% as the shot runs down.  Below, I am plotting two teams eFG% side by side.  You see that Portland is affected by the shot clock (like most teams), while Milwaukee is relatively unaffected.
 
 ![Imgur](http://i.imgur.com/34QKNAN.png)
 
@@ -128,9 +128,9 @@ How did he add 3 extra rebounds per game to his stat line?  He's just soaking up
 
 When we look at uncontested rebounds, Westbrook is a clear outlier.  When we look at the rest of OKC, it appears he's taking uncontested rebounds from Adams and Kanter to pad his stats.
 
-Uncontested rebounds is a useless stat that pads your "Rebounds" in the box score.  Using the linear relation in the plot above, we can correct each players rebounds stats.  For example, **Russle Westbrook gets 8.3 uncontested rebounds a game**, but given he rebounding ability (contested rebounds per game), we can estimate that **he should only get 3.7 uncontested rebounds a game**. Using this correction, we see can now look at how many total rebounds players on OKC should get:
+Uncontested rebounds is a useless stat that pads your "Rebounds" in the box score.  Using the linear relation in the plot above, we can correct each players rebounds stats.  For example, **Russell Westbrook gets 8.3 uncontested rebounds a game**, but given he rebounding ability (contested rebounds per game), we can estimate that **he should only get 3.7 uncontested rebounds a game**. Using this correction, we see can now look at how many total rebounds players on OKC should get:
 
-* **Russle Westbrook should get 5.8 rebounds per game** (instead of 10.7)
+* **Russell Westbrook should get 5.8 rebounds per game** (instead of 10.7)
 * **Enis Kanter should get 8.3 rebounds per game** (instead of 6.6)
 * **Steven Adams should get 9.4 rebounds per game** (instead of 7.6)
 
@@ -181,34 +181,34 @@ What about making the playoffs?  Again, teams peak four years after tanking.  Th
 
 ![Imgur](http://i.imgur.com/edmxwTd.png)
 
-## Emperical Bayes estimation of NBA statistics (January 2017)
+## Empirical Bayes estimation of NBA statistics (January 2017)
 There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
 
-Previously, we looked at James-Stein estimation of NBA statistics to solve this problem (see below).  Here, we use a method called Emperial Bayes.
+Previously, we looked at James-Stein estimation of NBA statistics to solve this problem (see below).  Here, we use a method called Empirical Bayes.
 
 So far into the season, how are players distributed when it comes to 3PT%?  
 
 ![Dist](http://i.imgur.com/iyZPaTX.png)
 
-In Emperican Bayes, we fit a beta distribution to the emperical distribution and use this as our prior prediction for players probability.  What this means is that our starting point for estimating a players 3PT% is to just ask "Well, how do most players in the NBA shoot 3PT shots?"
+In Empirical Bayes, we fit a beta distribution to the empirical distribution and use this as our prior prediction for players probability.  What this means is that our starting point for estimating a players 3PT% is to just ask "Well, how do most players in the NBA shoot 3PT shots?"
 
 ![Beta](http://i.imgur.com/tUuklaL.png)
 
 Using this as our starting point, we use each player's 3 point attempts and 3 point made shots as evidence to update our prior belief.  This means if a player has made a ton of 3PT shots, we update our estimate of their 3PT% to reflect that.  
 
-In essence, Emperical Bayes accounts for small sample sizes by dialing each players 3PT% towards the league average.  Just like James-Stein estimation, the less shots they've taken, the closer to league average they are estimated.  If you've made 9 out of 10 shots from 3PT, that will likely not keep up for the rest of the season and your Emperical Bayes 3PT% estimate will reflect that.
+In essence, Empirical Bayes accounts for small sample sizes by dialing each players 3PT% towards the league average.  Just like James-Stein estimation, the less shots they've taken, the closer to league average they are estimated.  If you've made 9 out of 10 shots from 3PT, that will likely not keep up for the rest of the season and your Empirical Bayes 3PT% estimate will reflect that.
 
 ![Estimate](http://i.imgur.com/D0hk9iJ.png)
 
 As you can see, most players are dialed toward the league average.
 
-Here are some interesting results for players's Emperical Bayes 3PT% estimate:
+Here are some interesting results for players's Empirical Bayes 3PT% estimate:
 
-* Even though **James Jones** has the highest 3PT% (51%), he has only taken 28 3's, so his emperical bayes estimate is only 43%.
+* Even though **James Jones** has the highest 3PT% (51%), he has only taken 28 3's, so his empirical bayes estimate is only 43%.
 * **George Hill** has the highest 3PT% Estimate (44%)
 * The other players in the top 5 are **Kyle Lowry, Danny Green, and JJ Redick**
 
-Emperical Bayes can do more than estimate your 3PT%.  It can also provide credible intervals (similar to confidence intervals).  For example, George Hill's 3PT% estimate is 43%, but his 95% credible interval spans from 36%-52%.  As the season goes on and he takes more 3s, the credible interval will get tighter and tighter.
+Empirical Bayes can do more than estimate your 3PT%.  It can also provide credible intervals (similar to confidence intervals).  For example, George Hill's 3PT% estimate is 43%, but his 95% credible interval spans from 36%-52%.  As the season goes on and he takes more 3s, the credible interval will get tighter and tighter.
 
 ![Hill](http://i.imgur.com/QwzoRvH.png)
 
@@ -216,7 +216,7 @@ Emperical Bayes can do more than estimate your 3PT%.  It can also provide credib
 ## James-Stein estimation of NBA statistics (November 2016)
 There is a very common problem after the first month of the NBA season.  How do you estimate someone's ability to shoot 3PT shots after they have taken there first 10 3PT attempts?  Maybe they only made 1, or maybe they made 9.  Either way, it seems unreasonable to use their current 3PT% as your best guess for what their 3PT% will be for the remainder of the season.
 
-In fact, commentators frequently say things like, "He's currently shooting 55% from 3, but that should regress to the mean".  They don't really know what they are talking about, but there intuition is certainly correct.  The idea is that if a shooter begins shooting an extreme percentage, he is more likely to end up about average than maintain the extreme shooting for the rest of the seaon.
+In fact, commentators frequently say things like, "He's currently shooting 55% from 3, but that should regress to the mean".  They don't really know what they are talking about, but there intuition is certainly correct.  The idea is that if a shooter begins shooting an extreme percentage, he is more likely to end up about average than maintain the extreme shooting for the rest of the season.
 
 This is what James-Stein estimation tries to accomplish.  In frequentist statistics (Maximum likelihood estimation), you would assume every shooter's true 3PT% is whatever he is currently shooting.  However, James-Stein estimation says, actually, we need to dial it towards the league average.  Importantly, the extent to which we dial it back to the league average depends on how far from the mean the player is shooting and also how many shots the player has taken.  
 
@@ -234,7 +234,7 @@ where **y** is a vector of player's current 3PT% and the number of players m.  N
 
 ![Imgur](http://i.imgur.com/F4PeD2n.png)
 
-Here we have plotted the players emperical 3PT% (blue) and James-Stein 3PT% estimation (green).  As you can see, the extremes are dialed in towards the league average.
+Here we have plotted the players empirical 3PT% (blue) and James-Stein 3PT% estimation (green).  As you can see, the extremes are dialed in towards the league average.
 
 It also helps to look at individual cases.  J.J. Redick is a great 3PT shooter.  So far he is shooting 49%, making 34/69 shots.  Since he has taken a healthy amount of shots, James-Stein estimation only dials him back to 43%.  On the other hand, Serge Ibaka is also making nearly 49%, but only on 38 attempts.  James-Stein dials his 3PT% estimation all the way down to 37%.
 
@@ -258,7 +258,7 @@ With PER, we can see when players peak during their career:
 
 For the high-end talent, players peak in their late 20's and begin a fairly linear decline.
 
-One common critism of PER is that Offense is heavily favored.  When we break down by position, we see that Point Gaurds and Centers are favorite.  This is due to PER weighting things like assists and rebounds heavily, which are biased towards those positions.
+One common criticism of PER is that Offense is heavily favored.  When we break down by position, we see that Point Gaurds and Centers are favorite.  This is due to PER weighting things like assists and rebounds heavily, which are biased towards those positions.
 
 ![Imgur](http://i.imgur.com/lHkbRIR.png)
 
@@ -268,13 +268,13 @@ Lastly, one might expect to use players with higher PERs more than players with 
 
 What is interesting though, is which players are underused or overused according to their PER.
 
-**DeMarcus Cousins**, while being a great player, was far over-used according to his PER.  This is likely due to him being on a disfunctional team.  **Kobe** was obviously the most used player in the NBA (by this metric, but also by the eye test).  Everything was running though him and he was not very good.
+**DeMarcus Cousins**, while being a great player, was far over-used according to his PER.  This is likely due to him being on a dysfunctional team.  **Kobe** was obviously the most used player in the NBA (by this metric, but also by the eye test).  Everything was running though him and he was not very good.
 
 ![Imgur](http://i.imgur.com/UMAv14o.png)
 
 ![Imgur](http://i.imgur.com/SX34bym.png)
 
-Alternatively, **Boban** and **Whiteside** were underused. I attibute this to their inexperience and coaches not yet trusting them enough to run plays for.
+Alternatively, **Boban** and **Whiteside** were underused. I attribute this to their inexperience and coaches not yet trusting them enough to run plays for.
 
 ![Imgur](http://i.imgur.com/m5hFeGA.png)
 
@@ -293,32 +293,4 @@ If anyone is interested, here are the top and bottom PERs from last season:
 and all time:
 
 ![Imgur](http://i.imgur.com/TDGj2ef.png)
-
-## Referee Analysis (November 2016)
-
-Refereeing in the NBA is an extremely hard job.  While all of the referees are professionals, they have different inclinations to blow there whistle. Here we analyze how many fouls were awarded by referees during the 2015-16 NBA season. Note: All data is normalized "per game".
-
-![Imgur](http://i.imgur.com/wc0fARA.png)
-
-When we look at the total free throws awarded for home and away teams, we see that 3 referees cluster away from the rest of the refs.  They slow down the game dramatically by awarding more FTA per game.  Refs are commonly accused of causing home-team advantage.  On the bright side, these 3 whistle-blowers don't seem to contribute to home-team advantage.
-
-Who are these refs?
-
-* **Ken Maur**
-* **Josh Tiven**
-* **Zach Zarba**
-
-When we combine all FTA awarded per game (home and away), it is immediately clear that these three refs are not like the rest of the reffing team in the NBA.
-
-![Imgur](http://i.imgur.com/3Oq79II.png)
-
-What about personal fouls?  Are there refs that like to call a ton of personal fouls?
-
-In fact, a single ref calls much more personal fouls then the other refs.  Who is it? **Zach Zarba**
-
-![Imgur](http://i.imgur.com/O6i1qzj.png)
-
-So what about the other two refs that like to call a lot of shooting fouls?  When we break down each ref by how many personal fouls they call and how many shooting fouls they call, we see a linear correlation.  This makes sense: refs have a certain amount of 'trigger-happiness' and they don't discriminate by which type of fouls they are calling.  **Ken Maur** and **Josh Tiven**, on the other hand, like to call a high proportion of shooting fouls relative to personal fouls.  What does that mean?  I have no idea.
-
-![Imgur](http://i.imgur.com/7OTi0G3.png)
 
