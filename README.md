@@ -155,13 +155,13 @@ How do player's offensive game change?  **Players take less shots and start assi
 
 ## Timeout Conversion (May 2017)
 
-Coach's time to shine is during a timeout.  I recently heard a media member say something along the lines of "If Brad Steven's got 100 timeouts a game, the celtics would score on 90 of them".  Let's test that claim.
+The coach's time to shine is during a timeout.  I recently heard a media member say something along the lines of "If Brad Steven's got 100 timeouts a game, the celtics would score on 90 of them".  Let's test that claim.
 
 Here, I am looking at every possession after a coach calls a timeout.  What percentage of the time did they score?  **The Raptors are the best offensive team coming out of timeouts**. The Lakers seem to struggle.
 
 ![teams](analysis/timeout/plots/teams.png)
 
-What about drawing up defensive schemes?  Below, I am looking at what percentage of time a team can get a defensive stop coming out of a timeout.  **The Atlana Hawks are the best defensive team coming out of timeouts.**
+What about drawing up defensive schemes?  Below, I am looking at what percentage of time a team can get a defensive stop coming out of a timeout.  **The Atlanta Hawks are the best defensive team coming out of timeouts.**
 
 ![def](analysis/timeout/plots/def.png)
 
