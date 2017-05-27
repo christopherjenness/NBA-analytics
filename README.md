@@ -11,6 +11,7 @@ Note: All stats are from stats.nba.com
 * Shot Clock Analysis
 * Westbrook Rebounding
 * Aging player's efficiency
+* Timeout Conversion
 * Rim Protection
 * Tanking
 * Empirical Bayes estimation of NBA statistics
@@ -151,6 +152,20 @@ Do players get smarter as they age?  **Players commit less turnovers and commit 
 How do player's offensive game change?  **Players take less shots and start assisting more as they age.**
 
 ![FGA](analysis/age-efficiency/plots/FGA.png)
+
+## Timeout Conversion (May 2017)
+
+The coach's time to shine is during a timeout.  I recently heard a media member say something along the lines of "If Brad Steven's got 100 timeouts a game, the celtics would score on 90 of them".  Let's test that claim.
+
+Here, I am looking at every possession after a coach calls a timeout.  What percentage of the time did they score?  **The Raptors are the best offensive team coming out of timeouts**. The Lakers seem to struggle.
+
+![teams](analysis/timeout/plots/teams.png)
+
+What about drawing up defensive schemes?  Below, I am looking at what percentage of time a team can get a defensive stop coming out of a timeout.  **The Atlanta Hawks are the best defensive team coming out of timeouts.**
+
+![def](analysis/timeout/plots/def.png)
+
+**If anyone knows what goes on during a Lakers timeout, please send me an email.**  I am very curious.
 
 ## Rim Protection (January 2017)
 
