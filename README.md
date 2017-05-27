@@ -11,6 +11,7 @@ Note: All stats are from stats.nba.com
 * Shot Clock Analysis
 * Westbrook Rebounding
 * Aging player's efficiency
+* Steal efficiency
 * Timeout Conversion
 * Rim Protection
 * Tanking
@@ -135,7 +136,7 @@ Uncontested rebounds is a useless stat that pads your "Rebounds" in the box scor
 * **Enis Kanter should get 8.3 rebounds per game** (instead of 6.6)
 * **Steven Adams should get 9.4 rebounds per game** (instead of 7.6)
 
-## Aging Player's efficiency (April 2017)
+## Aging Player's Efficiency (April 2017)
 
 What happens to a player's efficiency as they age?  Does their offense or defense start falling off first?  Here, we combine data from 2000-2016 NBA seasons to address this question.
 
@@ -152,6 +153,16 @@ Do players get smarter as they age?  **Players commit less turnovers and commit 
 How do player's offensive game change?  **Players take less shots and start assisting more as they age.**
 
 ![FGA](analysis/age-efficiency/plots/FGA.png)
+
+## Steal Efficiency (May 2017)
+
+How efficient are players at steals? When they attempt a steal, is it successful? Unfortunately, there is no "attempted steal" box score.
+
+The NBA tracks "Deflections" though. A deflection is as close as I can get to an "unsuccessful steal". With that in mind, I plotted each player's steals and deflections from last season.
+
+As expected, if you have more deflections you get more steals. But Kelly Oubre is an extreme outlier. He gets tons of deflections, but didn't get as many steals as you would expect.
+
+![steal-eff](analysis/steal-attempts/plots/scatter.png)
 
 ## Timeout Conversion (May 2017)
 
