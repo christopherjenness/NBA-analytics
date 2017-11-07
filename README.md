@@ -14,6 +14,7 @@ http://opensourcebasketball.com/
 * Which teams run the wrong plays?
 * Shot Clock Analysis
 * Westbrook Rebounding
+* Defender distance
 * Aging player's efficiency
 * Steal efficiency
 * Timeout Conversion
@@ -139,6 +140,16 @@ Uncontested rebounds is a useless stat that pads your "Rebounds" in the box scor
 * **Russell Westbrook should get 5.8 rebounds per game** (instead of 10.7)
 * **Enis Kanter should get 8.3 rebounds per game** (instead of 6.6)
 * **Steven Adams should get 9.4 rebounds per game** (instead of 7.6)
+
+## Defender Distance (November 2017)
+
+A 3 PT shot is an efficienct shot, but how is it affected by defenders? Here, we look at the affect on 3PT percentage when a defender is nearby, using a [dataset](https://www.kaggle.com/dansbecker/nba-shot-logs) containing the the nearest defender (and distance from the shooter) for all shots in the 2014-2015 season.
+
+When we bin all 3PT shots by their nearest defender and plot the 3PT FG%, it is obvious that a defended 3PT shot is a bad shot.  **If a defender is within 3 FT of the shooter, the 3PT FG% is less than 30%.** That means, really, you should only be taking semi-defended and open 3s.
+
+![DefDist](analysis/shotlog/plots/dist.png)
+
+It'll be interesting to see which shooters are unaffected by the presence/absence of close defenders.
 
 ## Aging Player's Efficiency (April 2017)
 
