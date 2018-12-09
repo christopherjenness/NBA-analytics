@@ -3,10 +3,6 @@ Short, offhand analyses of the NBA
 
 Note: All stats are from stats.nba.com, unless noted.
 
-I used to update this README with the analyses.  Then it started getting out of hand, so I moved everything:
-
-http://opensourcebasketball.com/
-
 ## Topics Covered 
 * Underrated Assisters
 * Consistent Players
